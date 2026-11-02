@@ -1,0 +1,883 @@
+:root{font-family:Inter,'Segoe UI',Arial,sans-serif;color:#f2f0fa;background:#171826;font-synthesis:none}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% -10%,#49304f 0,transparent 36%),radial-gradient(ellipse at 5% 20%,#253650 0,transparent 30%),#171826;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #f1a5d3;outline-offset:2px}.top{padding:17px max(20px,calc((100vw - 1190px)/2));border-bottom:1px solid #ffffff18;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#1b1b2bcf}.brand{display:flex;gap:11px;align-items:center}.brand b{display:block;font-size:18px;letter-spacing:-.5px}.brand small{display:block;font-size:9px;letter-spacing:1.7px;color:#a9a6c0;margin-top:4px}.logo{font-size:27px;background:#f5c4e5;color:#694277;border-radius:13px;width:43px;height:43px;display:grid;place-items:center}.save-indicator{font-size:12px;color:#a5d8ca}.shell{max-width:1190px;margin:auto;padding:0 20px}.intro{padding:40px 0 28px}.eyebrow{font-size:11px;letter-spacing:2px;color:#e5a9d3;font-weight:700}.intro h1{font-size:clamp(29px,4vw,46px);letter-spacing:-1.8px;margin:10px 0}.intro em{font-style:normal;color:#f1b3db}.intro p,.section-heading p{color:#aaa9c1;margin:6px 0}.tabs{display:flex;gap:9px;overflow-x:auto;border-bottom:1px solid #ffffff20;margin-bottom:24px;padding-bottom:12px}.tabs button{border:1px solid #ffffff1b;background:#28283a;color:#c5c1d5;border-radius:12px;padding:12px 19px;white-space:nowrap;font-weight:700}.tabs button.active{background:#eab4d8;color:#322339;border-color:#eab4d8}.page{display:none}.page.active{display:block}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:20px 0}.section-heading h2{margin:0;font-size:25px}.panel{background:#242438;border:1px solid #ffffff17;border-radius:19px;padding:22px;box-shadow:0 12px 30px #0d0c191c}.panel h3{margin:0 0 14px;font-size:17px}.checker-layout{display:grid;grid-template-columns:350px 1fr;gap:17px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}label{font-size:12px;color:#b9b5ce;font-weight:650}select,input{display:block;width:100%;margin-top:7px;padding:11px 9px;background:#34334b;color:#fff;border:1px solid #57516b;border-radius:10px;min-width:0}select option{background:#242438}.badges{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.type-img{width:115px;max-width:100%;height:auto;vertical-align:middle;border-radius:5px}.type-img.small-img{width:88px}.type-img.tiny{width:72px}.divider{height:1px;background:#ffffff1b;margin:20px 0}.legend{display:flex;flex-direction:column;gap:12px;color:#ccc9da;font-size:13px}.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px}.weak{background:#ef8cbb}.resist{background:#70d7b4}.neutral{background:#9b9cb1}.muted{color:#aaa9c1}.small{font-size:12px;line-height:1.65}.chart-title{display:flex;justify-content:space-between;align-items:center;gap:10px}.chart-title span{color:#aaa9c1;font-size:12px}.radar{display:grid;place-items:center;min-height:375px}.radar svg{width:min(100%,550px);height:auto}.summary{display:flex;flex-wrap:wrap;gap:8px}.summary-group{background:#2e2d42;border-radius:12px;padding:11px;flex:1;min-width:150px}.summary-group b{display:block;font-size:12px;margin-bottom:6px}.summary-group span{font-size:12px;color:#cac8db;line-height:1.7}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:17px}.team-card{border:1px solid #ffffff20;border-radius:15px;background:#29283d;color:#fff;padding:15px;text-align:left;min-height:95px}.team-card.selected{background:#4a344f;border-color:#f2b1d9}.team-card small{color:#c2aec5;display:block;margin-bottom:8px}.team-card b{font-size:15px}.team-card .pips{display:flex;gap:5px;margin-top:10px}.pip{width:23px;height:7px;border-radius:10px;background:#a975a6}.row{display:flex;align-items:center;gap:12px}.between{justify-content:space-between}.wrap{flex-wrap:wrap}.secondary,.primary,.danger-button{border-radius:10px;padding:10px 13px;border:1px solid #73627f;background:#38354b;color:#f9eafa;font-size:13px;font-weight:700}.primary{background:#eab4d8;color:#30223b;border-color:#eab4d8}.danger-button{border-color:#8c455e;color:#ffc6d4}.name-label{display:block;max-width:360px;margin:12px 0 20px}.slot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.slot-card{border:1px solid #ffffff1a;background:#2d2c42;padding:14px;border-radius:14px}.slot-card h4{margin:0 0 12px;color:#f0c0e0}.slot-card .field-grid{grid-template-columns:repeat(2,1fr)}.slot-card .field-grid.moves{grid-template-columns:repeat(3,1fr);margin-top:10px}.slot-card label{font-size:11px}.slot-card select{padding:9px 5px;font-size:12px}.slot-icons{margin-top:12px;display:flex;flex-wrap:wrap;gap:5px}.coverage{margin-top:17px;background:#2c2a40;padding:16px;border-radius:12px;color:#d9d5e8;font-size:13px;line-height:1.7}.battle-columns{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;margin:16px 0}.inline-select{display:flex;align-items:center;gap:10px}.inline-select select{width:auto;min-width:150px;margin:0}.compact-list{display:grid;gap:10px}.compact-item{padding:12px;border-radius:12px;background:#302e46}.compact-item b{display:block;margin-bottom:7px}.enemy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.enemy-grid .slot-card{padding:12px}.matrix-scroll{overflow-x:auto}.match-table{width:100%;border-collapse:separate;border-spacing:5px;text-align:center;min-width:530px}.match-table th{font-size:12px;color:#d2cce0;padding:10px}.match-table td{border-radius:11px;background:#302e46;padding:13px 6px;font-size:12px}.match-table td strong{display:block;font-size:15px}.match-table td span{display:block;color:#b6b2c8;font-size:10px;margin-top:4px}.match-table td.good{background:#224a46}.match-table td.bad{background:#573342}.match-table td.mixed{background:#48405c}.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.detail-card{background:#2d2b41;border-radius:12px;padding:14px}.detail-card h4{margin:0 0 10px}.move-line{display:flex;justify-content:space-between;gap:9px;align-items:center;margin:8px 0;font-size:12px}.value{font-weight:800}.value.good{color:#8be1b7}.value.bad{color:#f4a2bb}.value.normal{color:#d7d3e5}.history-item{background:#29283d;border:1px solid #ffffff1b;border-radius:14px;padding:16px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:12px}.history-item b{display:block;margin-bottom:5px}.history-item small{color:#aaa9c1}.history-actions{display:flex;gap:8px}footer{text-align:center;padding:45px 10px 30px;color:#858399;font-size:12px}@media(max-width:850px){.checker-layout,.battle-columns{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.save-indicator{font-size:10px}.radar{min-height:280px}}@media(max-width:600px){.shell{padding:0 12px}.top{padding:12px}.intro{padding:24px 0 16px}.panel{padding:14px}.slot-grid,.enemy-grid,.detail-grid{grid-template-columns:1fr}.slot-card .field-grid.moves{grid-template-columns:repeat(3,1fr)}.section-heading{align-items:flex-start;flex-wrap:wrap}.team-grid{gap:8px}.team-card{padding:12px}.chart-title{display:block}.radar{min-height:240px}.history-item{align-items:flex-start;flex-direction:column}}
+
+
+/* V1.1 — soft sky, clouds and reflected water. */
+:root{color:#30435f;background:#a9c4e8}
+body{color:#30435f;background:
+ radial-gradient(ellipse 26% 9% at 18% 13%,rgba(255,255,255,.88) 0 55%,transparent 100%),
+ radial-gradient(ellipse 30% 11% at 62% 18%,rgba(255,255,255,.76) 0 50%,transparent 100%),
+ radial-gradient(ellipse 22% 8% at 92% 10%,rgba(255,255,255,.82) 0 52%,transparent 100%),
+ linear-gradient(180deg,#c2d8f1 0%,#a5c4e7 29%,#86a9df 49%,#6e94d1 51%,#91b6e4 72%,#b1d7ed 100%);
+ background-attachment:fixed;position:relative}
+body:before{content:"";position:fixed;inset:51% 0 0;pointer-events:none;z-index:0;opacity:.34;background:repeating-linear-gradient(178deg,transparent 0 19px,rgba(255,255,255,.32) 20px,transparent 22px,transparent 43px),radial-gradient(ellipse at 50% 95%,#d6f2ff,transparent 70%)}
+.top,.shell{position:relative;z-index:1}
+.top{background:rgba(237,247,255,.70);border-bottom:1px solid rgba(255,255,255,.75);backdrop-filter:blur(16px)}
+.brand small,.intro p,.section-heading p,.muted,.chart-title span,.history-item small{color:#5b6d87}
+.brand b,.intro h1,.section-heading h2{color:#2d4160}
+.logo{background:#fce0f1;color:#97658d}
+.eyebrow{color:#a36f9d}.intro em{color:#a86f9d}.save-indicator{color:#327d72}
+.tabs{border-bottom-color:#ffffff88}.tabs button{background:rgba(245,250,255,.76);color:#536a8a;border-color:#ffffffa8;backdrop-filter:blur(10px)}
+.tabs button.active{background:#f8d7ec;color:#714b78;border-color:#fff}
+.panel{background:rgba(244,249,255,.80);border:1px solid rgba(255,255,255,.90);box-shadow:0 14px 32px rgba(46,79,126,.16);backdrop-filter:blur(16px)}
+.panel h3,.panel h4{color:#354d70}label{color:#4f6686}
+select,input{background:rgba(255,255,255,.88);color:#344865;border:1px solid #bbd0e8}
+select option{background:#fff;color:#344865}
+.divider{background:#b6cce3}.legend{color:#4d6582}.neutral{background:#98aac4}
+.summary-group,.coverage,.slot-card,.detail-card,.compact-item,.history-item{background:rgba(230,241,254,.85);color:#3c5575;border-color:#c9dbef}
+.summary-group span,.coverage,.detail-card,.compact-item,.slot-card label{color:#516a89}
+.team-card{background:rgba(244,250,255,.79);color:#344d6d;border:1px solid #d8e5f4}
+.team-card.selected{background:rgba(251,221,240,.92);border-color:#d996c0}
+.team-card small{color:#6e819c}.pip{background:#a6bde0}
+.secondary,.danger-button{background:rgba(245,250,255,.89);color:#526788;border-color:#b7cce5}
+.primary{background:#f3c7e3;color:#644d72;border-color:#f5d5e9}
+.match-table th{color:#4d6485}.match-table td{background:#dceaf9;color:#395372}.match-table td span{color:#627b98}
+.match-table td.good{background:#c8eee0}.match-table td.bad{background:#f8d7e1}.match-table td.mixed{background:#e5ddf5}
+.value.good{color:#178269}.value.bad{color:#b84469}.value.normal{color:#627a97}
+.history-item{border:1px solid #d7e5f5}footer{color:#557395}
+.radar svg{overflow:visible}
+
+/* V1.3 visual battle layout */
+.enemy-picks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:12px 0 22px}.enemy-pick{min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;padding:13px 6px;border-radius:17px;border:2px solid #d5e2f5;background:#f5f9ffbf;color:#405575;cursor:pointer}.enemy-pick.picked{border-color:#bb8bdf;background:#f7e6fb}.enemy-pick b{font-size:13px}.mini-types,.mini-moves{display:flex;align-items:center;gap:5px;justify-content:center}.type-mini{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;background:#fff;border:1px solid #d6e3f4;flex-shrink:0}.type-mini img{width:25px;height:25px;object-fit:contain}.type-mini.empty{color:#8294ad;background:#e4eaf4}.mini-moves .type-mini{width:24px;height:24px;border-radius:50%}.mini-moves .type-mini img{width:20px;height:20px}.type-mini.ultimate-mini{border:2px solid #d38bff;box-shadow:0 0 0 2px #f3dbff,0 0 13px 3px #c987f3;background:#f7e9ff}.battle-mini-heading{margin:18px 0 6px}.enemy-editor{padding:16px;border:1px solid #d0dff0;background:#f7faff99;border-radius:18px}.editor-heading{display:flex;justify-content:space-between;gap:8px;margin-bottom:12px}.editor-preview{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:#6b7b98}.visual-matchups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:20px 0}.visual-card{min-width:0;border:1px solid #d0dff1;background:#edf5ffdf;border-radius:20px;overflow:hidden}.visual-card summary{cursor:pointer;list-style:none;padding:16px}.visual-card summary::-webkit-details-marker{display:none}.visual-card-top,.visual-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.visual-card-top b{font-size:17px}.visual-card-bottom{margin-top:12px;color:#7284a2;font-size:12px}.visual-card-bottom .mini-moves{justify-content:flex-start}.battle-score-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.battle-score{min-width:0;display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 5px;border-radius:14px;background:#e1e8f4}.battle-score span{font-size:10px;font-weight:800;letter-spacing:.3px}.battle-score strong{font-size:24px}.battle-score.good{background:#c8eee2;color:#18745b}.battle-score.bad{background:#f9d8e2;color:#a63859}.battle-score.normal{background:#e2e5f1;color:#5d6883}.battle-score.unknown{background:#e8ebf2;color:#78869c}.battle-score .type-mini{width:25px;height:25px}.battle-score .type-mini img{width:22px;height:22px}.expanded-moves{border-top:1px solid #d0dff1;padding:15px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.expanded-moves>div>b{display:block;margin-bottom:9px}.visual-move-row{display:flex;align-items:center;gap:7px;margin:7px 0;font-size:12px}.visual-move-row .type-mini{width:25px;height:25px}.visual-move-row .type-mini img{width:21px;height:21px}.visual-move-row .value{margin-left:auto}.enemy-editor .field-grid{margin:10px 0}
+@media(max-width:720px){.enemy-picks{gap:5px}.enemy-pick{padding:9px 2px}.enemy-pick b{font-size:11px}.visual-matchups{grid-template-columns:1fr}.expanded-moves{grid-template-columns:1fr}.battle-score strong{font-size:21px}}
+/* Website V2 — battle arena and whole-team coverage */
+.shell{max-width:1440px}.arena{display:grid;grid-template-columns:minmax(185px,1fr) minmax(300px,1.55fr) minmax(185px,1fr);gap:15px;align-items:stretch;margin-bottom:22px}.arena-side,.arena-middle{background:rgba(242,249,255,.87);border:1px solid rgba(255,255,255,.94);border-radius:22px;padding:16px;box-shadow:0 12px 30px rgba(59,97,145,.13);min-width:0}.arena-middle{background:linear-gradient(160deg,rgba(253,248,255,.94),rgba(228,243,255,.94));border:1px solid #d3dff6;padding:22px}.arena-side-head{min-height:67px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.arena-side-head h3{margin:0;color:#3b587d;font-size:17px}.arena-side-head select{width:auto;max-width:170px;margin:0;padding:8px}.arena-picks{display:grid;grid-template-columns:1fr;gap:12px}.arena-pick{width:100%;min-height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;border:2px solid #d3e1f5;border-radius:18px;background:rgba(250,253,255,.82);color:#405a80;transition:border-color .15s,background .15s,box-shadow .15s}.arena-pick:hover{border-color:#a4c4e9}.arena-pick.picked{border-color:#69b8f3;background:#eaf7ff;box-shadow:0 0 0 3px #d9eeff,0 4px 20px #a2d6fa88}.arena-pick b{font-size:14px}.arena-pick .mini-types{min-height:32px}.arena-editor-head{text-align:center;margin:2px 0 24px}.arena-editor-head h3{margin:8px 0 6px;font-size:24px;color:#36577f}.arena-editor-head p{color:#7486a0;font-size:12px}.visual-fields{display:grid;gap:19px}.visual-fields .field-grid{gap:13px}.visual-fields label{display:block;font-size:12px;color:#536f92;text-align:center}.visual-fields .field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}.visual-fields .field-grid.moves label:last-child{grid-column:1/-1;max-width:220px;width:100%;margin:auto}.image-picker{position:relative;margin-top:8px}.picker-current{width:100%;height:62px;background:#fff;border:1px solid #c2d7f0;border-radius:13px;display:flex;justify-content:center;align-items:center;position:relative;box-shadow:0 3px 9px #8db5db18}.picker-current img{width:125px;max-width:calc(100% - 30px);height:40px;object-fit:contain}.picker-chevron{position:absolute;right:11px;color:#708aab}.picker-options{position:absolute;z-index:50;top:calc(100% + 5px);left:0;width:100%;min-width:140px;max-height:280px;overflow-y:auto;padding:7px;border:1px solid #c6d8ef;border-radius:14px;background:#fff;box-shadow:0 14px 28px #41658b4a}.picker-options[hidden]{display:none}.picker-option{display:flex;align-items:center;justify-content:center;width:100%;border:0;border-radius:9px;background:transparent;padding:5px;min-height:37px}.picker-option:hover,.picker-option.chosen{background:#e5f2ff}.picker-option img{width:125px;max-width:100%;height:32px;object-fit:contain}.picker-none{color:#6b809d;font-weight:650;font-size:13px}.type-mini{border:0;background:transparent}.type-mini img{width:29px;height:29px}.mini-moves .type-mini img{width:23px;height:23px}.type-mini.ultimate-mini{border:2px solid var(--glow,#b8c7e2);background:#ffffffaa;box-shadow:0 0 0 2px color-mix(in srgb,var(--glow,#b8c7e2) 20%,transparent),0 0 13px 2px var(--glow,#b8c7e2)}.type-mini.empty.ultimate-mini{--glow:#a7b6ca!important;box-shadow:none;border:1px solid #c7d5e7}.coverage-panel,.recommendations{margin:18px 0}.coverage-panel .row p{margin:3px 0 0}.coverage-switch,.radar-member-switch{display:flex;gap:5px;flex-wrap:wrap;background:#e3effc;padding:5px;border-radius:13px}.coverage-switch button,.radar-member-switch button{border:0;background:transparent;color:#587295;border-radius:9px;padding:9px 12px;font-size:12px;font-weight:750}.coverage-switch button.active,.radar-member-switch button.active{background:#fff;color:#346b9a;box-shadow:0 2px 7px #8ab4db33}.coverage-content{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr);gap:20px;align-items:center}.team-radar{text-align:center}.team-radar svg{width:min(100%,510px);height:auto;display:block;margin:auto;overflow:visible}.radar-member-switch{display:inline-flex;margin:12px auto 0}.radar-key{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;font-size:11px;color:#637a98}.radar-explanation{padding:20px;background:#f3f8ff;border:1px solid #d6e4f5;border-radius:17px;color:#526b8b;line-height:1.65;font-size:13px}.radar-explanation h4{margin:0 0 10px;font-size:18px;color:#395879}.radar-callout{font-size:12px;text-transform:uppercase;letter-spacing:.6px;font-weight:800;margin:22px 0 10px;color:#6481a3}.radar-row{display:flex;align-items:center;gap:10px;border-bottom:1px solid #d8e6f5;padding:8px 0}.radar-row b{flex:1}.radar-row strong{font-size:15px}.radar-row .type-mini{width:31px;height:31px}.ranked-matchups{display:grid;gap:10px;margin:18px 0}.rank-card{background:#f1f8ff;border:1px solid #d4e4f6;border-radius:15px;overflow:hidden}.rank-card summary{display:flex;align-items:center;gap:14px;cursor:pointer;padding:14px;list-style:none}.rank-card summary::-webkit-details-marker{display:none}.rank-number{background:#e0eafa;border-radius:50%;height:32px;width:32px;display:grid;place-items:center;color:#5e7b9f;font-weight:850;flex-shrink:0}.rank-name{display:flex;flex-direction:column;gap:5px;min-width:125px}.rank-name span{display:flex;gap:4px}.rank-name .type-mini{width:23px;height:23px}.rank-name .type-mini img{width:23px;height:23px}.rank-move{display:flex;align-items:center;gap:9px;flex:1;min-width:0}.rank-move b{font-size:13px}.rank-move small{display:block;color:#7187a3;margin-top:3px}.rank-power{font-weight:900;font-size:22px;min-width:92px;text-align:center}.rank-power.good{color:#168367}.rank-power.bad{color:#b84469}.rank-power.normal,.rank-power.unknown{color:#667d9b}.rank-danger{font-size:11px;padding:9px;border-radius:9px;background:#e5eaf3;color:#607894;max-width:175px;text-align:center}.rank-danger.bad{background:#f9d8e2;color:#a63859}.rank-danger.good{background:#c8eee2;color:#18745b}.expand-hint{color:#8aa1bd}.rank-details{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:15px;border-top:1px solid #d2e1f3}.rank-details>div>b{font-size:12px;color:#536b8b}.visual-move-row{border-bottom:1px solid #d8e6f4;padding:5px 0}.rank-card:first-child{border-color:#99ddcb;background:#f0fff9}.rank-card:first-child .rank-number{background:#c8eee2;color:#18745b}
+@media(max-width:980px){.arena{grid-template-columns:minmax(145px,1fr) minmax(255px,1.5fr) minmax(145px,1fr);gap:8px}.arena-side,.arena-middle{padding:11px}.coverage-content{grid-template-columns:1fr}.radar-explanation{max-width:620px;width:100%;margin:auto}.rank-card summary{gap:8px}.rank-danger{max-width:135px}}
+@media(max-width:700px){.arena{grid-template-columns:1fr 1fr}.arena-middle{grid-column:1/-1;grid-row:2}.arena-side{grid-row:1}.arena-picks{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.arena-pick{min-height:96px;padding:8px 3px}.arena-pick b{font-size:12px}.arena-side-head{min-height:70px}.arena-side-head h3{font-size:14px}.arena-side-head select{max-width:100%;font-size:12px}.arena-middle{padding:17px}.rank-card summary{flex-wrap:wrap}.rank-name{min-width:95px}.rank-move{min-width:125px}.rank-power{min-width:65px}.rank-danger{max-width:none;flex-basis:100%;order:5}.rank-details{grid-template-columns:1fr}.coverage-switch{width:100%}.coverage-switch button{flex:1}}
+@media(max-width:390px){.arena-pick .type-mini{width:24px;height:24px}.arena-pick .type-mini img{width:23px;height:23px}.arena-pick{min-height:87px}.rank-move{min-width:105px}.rank-power{font-size:18px}}
+
+/* Consistent user-supplied element artwork across every page */
+#checker .image-picker{margin-top:7px}#checker .picker-current{height:58px}#checker .picker-current img{width:145px;height:39px}#checker .picker-option img{width:145px;height:34px}#checker .badges .type-img{width:145px}#teams .visual-fields .field-grid.moves{grid-template-columns:repeat(3,minmax(0,1fr))}#teams .visual-fields .field-grid.moves label:last-child{grid-column:auto;max-width:none}#teams .picker-current{height:55px}#teams .picker-current img{height:36px}#teams .slot-icons .type-img{width:95px}#teams .image-picker{z-index:auto}#teams .slot-card{overflow:visible}#teams .picker-options{z-index:100}#checker .radar svg image{image-rendering:auto}@media(max-width:650px){#teams .visual-fields .field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))}#teams .visual-fields .field-grid.moves label:last-child{grid-column:1/-1;max-width:220px;margin:auto;width:100%}}
+
+/* V2.3: corrected transparent white source artwork; colored image badges and tiles */
+.picker-current img,.picker-option img{width:170px!important;max-width:calc(100% - 24px)!important;height:44px!important;object-fit:contain!important}
+.picker-options{min-width:205px!important;max-height:350px!important}
+.picker-option{min-height:50px!important;padding:3px!important}
+.picker-option img{width:180px!important;max-width:100%!important;height:45px!important}
+#checker .picker-current img,#checker .picker-option img{height:45px!important;width:180px!important}
+.type-mini img{object-fit:contain}
+#checker .radar svg image{image-rendering:auto}
+
+/* V2.4: circular element artwork and stronger contrast for resistant multipliers */
+#checker .radar svg image,.team-radar svg image{overflow:hidden}
+#checker .radar svg text,.team-radar svg text{paint-order:stroke;stroke:#f5faff;stroke-width:2.5px;stroke-linejoin:round}
+
+/* V2.5: crisp, intentional Ultimate marker — no airbrushed glow */
+.type-mini.ultimate-mini, .mini-moves .type-mini.ultimate-mini {
+  border:2px solid var(--glow,#a7b6ca)!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  box-shadow:0 0 0 2px #ffffff,0 0 0 3px var(--glow,#a7b6ca)!important;
+  position:relative;
+}
+.type-mini.ultimate-mini::after{
+  content:'✦';position:absolute;right:-7px;top:-10px;
+  font-size:11px;font-weight:900;line-height:1;
+  color:var(--glow,#a7b6ca);background:#fff;
+  border-radius:50%;padding:2px;
+}
+.type-mini.empty.ultimate-mini{border:1px dashed #c7d5e7!important;box-shadow:none!important;background:#f5f8ff!important}
+.type-mini.empty.ultimate-mini::after{display:none}
+/* Type badges already appear in the selectors; no duplicate strip below each team card */
+#teams .slot-icons{display:none!important}
+
+/* V2.6: unified red for weaknesses, and no redundant checker badges */
+:root{--weak-color:#c62846;--resist-color:#168568;--neutral-color:#8fa4c0}
+.dot.weak{background:var(--weak-color)!important}
+.dot.resist{background:var(--resist-color)!important}
+.dot.neutral{background:var(--neutral-color)!important}
+#checker .badges,#checker #checkerBadges{display:none!important}
+#checker .field-grid + .divider{margin-top:23px}
+
+/* Four attack selections: basic, two skills, and Ultimate */
+.visual-fields .field-grid.moves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.visual-fields .field-grid.moves>label:last-child{grid-column:auto}
+@media(max-width:620px){.visual-fields .field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+@media(max-width:390px){.visual-fields .field-grid.moves{grid-template-columns:1fr}}
+
+.checker-mode-switch{display:flex;gap:8px;padding:5px;background:#e3edfa;border-radius:14px;margin-bottom:20px}.checker-mode-switch button{flex:1;border:0;border-radius:10px;padding:12px 8px;color:#536d91;font-weight:800;background:transparent;cursor:pointer}.checker-mode-switch button.active{background:#fff;color:#2c547e;box-shadow:0 2px 8px #7397c333}
+
+/* V3.0: readable, full-width element artwork in Type Checker */
+#checker .checker-layout{grid-template-columns:minmax(440px, .42fr) minmax(0,1fr)}
+#checker .field-grid{gap:14px}
+#checker .picker-current{height:76px;padding:8px 18px 8px 8px}
+#checker .picker-current img{width:100%!important;max-width:calc(100% - 12px)!important;height:57px!important;object-fit:fill!important}
+#checker .picker-chevron{right:7px}
+#checker .picker-option img{width:100%!important;max-width:100%!important;height:52px!important;object-fit:contain!important}
+#checker .picker-options{min-width:100%!important}
+@media(max-width:1050px){#checker .checker-layout{grid-template-columns:1fr}}
+@media(max-width:460px){#checker .picker-current{height:65px;padding:6px 15px 6px 5px}#checker .picker-current img{height:46px!important}}
+
+/* Team editor coverage: full-width panel below the four Aniimo */
+#teams .my-team-coverage{margin-top:26px;padding:22px;background:rgba(239,247,255,.78);border:1px solid #c8dcf5;border-radius:20px}
+#teams .my-team-coverage .coverage-content{margin-top:12px}
+#teams .my-team-coverage .team-radar svg{max-width:510px}
+
+/* V3.2: full-size centered element artwork, clear ring states, matching legends */
+#checker .checker-layout{grid-template-columns:minmax(440px,.42fr) minmax(0,1fr)}
+#checker .field-grid{gap:12px}
+#checker .picker-current{height:84px;padding:6px 13px 6px 6px;border-radius:16px}
+#checker .picker-current img{width:100%!important;max-width:calc(100% - 15px)!important;height:65px!important;object-fit:fill!important}
+#checker .picker-chevron{right:6px}
+#checker .picker-option img{height:55px!important;width:100%!important;object-fit:contain!important}
+#checker .legend .dot.weak{background:#c62846}
+#checker .legend .dot.resist{background:#168568}
+#checker .legend .dot.neutral{background:#98aac4}
+#checker .radar svg image{image-rendering:auto}
+@media(max-width:1050px){#checker .checker-layout{grid-template-columns:1fr}}
+@media(max-width:480px){#checker .picker-current{height:70px}#checker .picker-current img{height:53px!important}}
+
+/* V3.4: clean proportional element selectors across every page */
+.image-picker .picker-current{height:55px!important;padding:4px 30px 4px 5px!important;border:0!important;border-radius:12px!important;background:transparent!important;box-shadow:none!important;overflow:hidden;}
+.image-picker .picker-current img{display:block;width:100%!important;max-width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;}
+.image-picker .picker-chevron{right:6px!important;top:50%;transform:translateY(-50%);font-size:16px;color:#3b587d;background:#e8f3ff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;}
+.image-picker .picker-option img{object-fit:contain!important;height:42px!important;max-width:100%!important;}
+#checker .picker-current{height:61px!important;padding:2px 30px 2px 2px!important;}
+#checker .picker-current img{height:100%!important;object-fit:contain!important;}
+#teams .picker-current{height:52px!important;}
+.visual-fields .field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr));}
+#teams .visual-fields .field-grid.moves{grid-template-columns:repeat(3,minmax(0,1fr));}
+.arena-picks{gap:9px}.arena-pick{min-height:87px}.arena-middle{min-height:300px}
+#checker .chart-panel{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(250px,.85fr);column-gap:12px;align-items:center}
+#checker .chart-title{grid-column:1/-1}
+#checker .radar{grid-column:1;min-width:0}
+#checker .summary{grid-column:2;min-width:0}
+#checker .result-group{padding:13px 14px;margin-bottom:10px;border-radius:16px}
+#checker .result-group.resist{background:#e1f5ed}
+#checker .result-group.neutral{background:#e9eef5}
+#checker .result-group.weak{background:#fbe3eb}
+#checker .result-items{display:flex;gap:8px 13px;flex-wrap:wrap;margin-top:10px}
+#checker .result-item{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-size:12px}
+#checker .result-item img{width:22px;height:22px;object-fit:contain}
+@media(max-width:1050px){#checker .chart-panel{display:block}#checker .summary{margin-top:12px}}
+@media(max-width:650px){#teams .visual-fields .field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* V3.5 — user's exact team and arena mockup: 2 defensive fields above 4 attacks. */
+#teams .slot-card .visual-fields, #arenaEditor .visual-fields {max-width:100%;margin-inline:auto;}
+#teams .slot-card .visual-fields>.field-grid:first-child{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:90%;margin:0 auto 24px;}
+#teams .slot-card .visual-fields>.field-grid.moves{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px;margin:0 auto;}
+#teams .slot-card .visual-fields label, #arenaEditor .visual-fields label{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:5px;text-align:center;min-width:0;color:#506d91;font-size:11px;font-weight:800;}
+#teams .slot-card .visual-fields label>.image-picker, #arenaEditor .visual-fields label>.image-picker{width:100%;margin-top:0;min-width:0;}
+#teams .slot-card .visual-fields label{font-size:10px;}
+#teams .slot-card .visual-fields label::first-line, #arenaEditor .visual-fields label::first-line{line-height:1.5;}
+#teams .slot-card .visual-fields .picker-current{height:46px!important;width:100%;padding:0!important;display:flex;align-items:center;justify-content:center;position:relative;}
+#teams .slot-card .visual-fields .picker-current img{max-width:100%!important;width:100%!important;height:43px!important;object-fit:contain!important;}
+#teams .slot-card .visual-fields .picker-chevron, #arenaEditor .visual-fields .picker-chevron{position:absolute!important;right:4px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2;background:#e9f3ffdb!important;}
+#teams .slot-card .visual-fields .picker-none,#arenaEditor .visual-fields .picker-none{display:flex;align-items:center;justify-content:center;background:#d8e6fa;border-radius:9px;min-height:42px;width:100%;color:#4c6689;}
+#teams .slot-card .visual-fields .image-picker:has(.picker-none) .picker-current{padding-right:24px!important;}
+#teams .slot-card{min-height:265px;}
+#arenaEditor .visual-fields{max-width:550px;margin:20px auto;}
+#arenaEditor .visual-fields>.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px 26px;margin-bottom:14px;}
+#arenaEditor .visual-fields .picker-current{width:100%;height:54px!important;padding:0!important;}
+#arenaEditor .visual-fields .picker-current img{height:50px!important;width:100%!important;max-width:100%!important;object-fit:contain!important;}
+#arenaEditor .visual-fields label{font-size:12px;}
+/* Menus stay above cards; no detached arrow or stretching. */
+.image-picker{position:relative;}
+.picker-options{z-index:100!important;}
+@media(max-width:700px){#teams .slot-card .visual-fields>.field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))!important;}#teams .slot-card .visual-fields>.field-grid:first-child{max-width:100%;gap:10px;}}
+
+/* V3.6: mockup-faithful unified selectors; arrows never float outside artwork. */
+#teams .visual-fields .field-tab,#arenaEditor .visual-fields .field-tab{display:inline-flex;align-items:center;justify-content:center;min-height:25px;padding:4px 11px;border-radius:5px;background:#d9e7fc;color:#4a658a;font-weight:800;line-height:1.2;max-width:100%;margin:0 auto 6px;}
+#teams .visual-fields label,#arenaEditor .visual-fields label{gap:0!important;}
+#teams .visual-fields .image-picker,#arenaEditor .visual-fields .image-picker,#checker .image-picker{width:100%;min-width:0;}
+.image-picker .picker-current,#teams .slot-card .visual-fields .picker-current,#arenaEditor .visual-fields .picker-current,#checker .picker-current{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:auto!important;min-height:42px!important;max-width:100%!important;padding:0!important;border:0!important;background:transparent!important;overflow:visible!important;box-shadow:none!important;}
+.image-picker .picker-current img,#teams .slot-card .visual-fields .picker-current img,#arenaEditor .visual-fields .picker-current img,#checker .picker-current img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:240 / 58;object-fit:contain!important;object-position:center!important;border-radius:9px;}
+.image-picker .picker-chevron,#teams .slot-card .visual-fields .picker-chevron,#arenaEditor .visual-fields .picker-chevron,#checker .picker-chevron{position:absolute!important;top:50%!important;right:9px!important;transform:translateY(-50%)!important;width:17px!important;height:17px!important;background:transparent!important;border:0!important;color:white!important;font-size:18px!important;font-weight:900!important;line-height:1!important;z-index:2!important;pointer-events:none!important;text-shadow:0 1px 2px #32455d55;}
+.image-picker .picker-current:has(.picker-none){background:#d9e7fa!important;border-radius:10px!important;min-height:46px!important;}
+.image-picker .picker-current:has(.picker-none) .picker-chevron{color:#476489!important;text-shadow:none!important;}
+#teams .slot-card .visual-fields .image-picker:has(.picker-none) .picker-current{padding:0!important;}
+#teams .slot-card .visual-fields .picker-none,#arenaEditor .visual-fields .picker-none,.image-picker .picker-none{min-height:42px!important;background:transparent!important;width:100%;padding:0 22px 0 8px;}
+#teams .slot-card .visual-fields>.field-grid:first-child{max-width:72%!important;gap:30px!important;margin-bottom:30px!important;}
+#teams .slot-card .visual-fields>.field-grid.moves{gap:12px!important;}
+#teams .slot-card{min-height:240px!important;}
+#arenaEditor .visual-fields{max-width:540px!important;margin:20px auto!important;}
+#arenaEditor .visual-fields>.field-grid{gap:18px 30px!important;margin-bottom:16px!important;}
+#checker .picker-current{max-width:240px!important;margin:auto!important;}
+#checker .field-grid label{text-align:center;}
+#checker .summary{background:#f8fbffb8;border:1px solid #d2e1f5;border-radius:20px;padding:16px;align-self:center;}
+#checker .summary>h3,#checker .summary>h4{width:100%;}
+#checker .result-group{width:100%;}
+@media(max-width:700px){#teams .slot-card .visual-fields>.field-grid:first-child{max-width:100%!important;gap:12px!important;}#teams .slot-card .visual-fields>.field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+
+
+/* V3.7 — Results must be a vertical panel, not a wrapping flex row.
+   The previous .summary display:flex made the heading sit BESIDE the first card. */
+#checker #checkerSummary.summary {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 20px !important;
+  background: rgba(250,253,255,.88) !important;
+  border: 1px solid #d2e1f5 !important;
+  border-radius: 20px !important;
+}
+#checker #checkerSummary > h3 {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 4px !important;
+  padding: 0 !important;
+  text-align: left !important;
+  flex: 0 0 auto !important;
+  font-size: 19px !important;
+}
+#checker #checkerSummary .result-group {
+  display: block !important;
+  box-sizing: border-box !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 16px !important;
+  border-radius: 16px !important;
+}
+#checker #checkerSummary .result-items {display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:9px 14px!important;}
+#checker #checkerSummary .result-item {white-space:nowrap;max-width:100%;}
+#checker #checkerSummary .result-heading {margin-bottom:9px;}
+@media(max-width:1250px){#checker .chart-panel{grid-template-columns:minmax(0,1fr) minmax(270px,.95fr);}}
+@media(max-width:800px){#checker .chart-panel{display:block!important;}#checker #checkerSummary{margin-top:16px;}}
+
+/* V3.8 shared UI consistency: every empty element picker remains a full box. */
+.image-picker .picker-current:has(.picker-none),
+#teams .slot-card .visual-fields .image-picker .picker-current:has(.picker-none),
+#arenaEditor .visual-fields .image-picker .picker-current:has(.picker-none),
+#checker .image-picker .picker-current:has(.picker-none) {
+  display:flex!important; width:100%!important; min-height:46px!important;
+  background:#d8e6fa!important; border:1px solid #c7daf5!important;
+  border-radius:10px!important; overflow:hidden!important;
+}
+.image-picker .picker-current:has(.picker-none) .picker-none {
+  display:flex!important; align-items:center!important; justify-content:center!important;
+  flex:1!important; min-height:44px!important; color:#476489!important;
+  font-weight:800!important; background:transparent!important;
+}
+.image-picker .picker-current:has(.picker-none) .picker-chevron {color:#476489!important;}
+/* Matching heading markers for all result groups and modes. */
+#checker #checkerSummary .result-heading {display:flex!important;align-items:center!important;gap:10px!important;}
+#checker #checkerSummary .result-dot {display:inline-block!important;width:13px!important;height:13px!important;min-width:13px!important;border-radius:50%!important;background:#8da0ba!important;}
+#checker #checkerSummary .result-group.resist .result-dot{background:#2ab786!important;}
+#checker #checkerSummary .result-group.neutral .result-dot{background:#8c9bb2!important;}
+#checker #checkerSummary .result-group.weak .result-dot{background:#e52e57!important;}
+
+/* V3.9: Battle Arena polish. Hidden controls must never appear as empty dropdowns. */
+[hidden] { display:none !important; }
+#battle .arena { grid-template-columns:minmax(220px,1fr) minmax(390px,1.52fr) minmax(220px,1fr);gap:16px;align-items:start; }
+#battle .arena-middle { padding:25px 26px 29px; }
+#battle .arena-editor-head { margin-bottom:20px; }
+#battle .arena-editor-head p { margin-bottom:0; }
+#battle .arena-picks { gap:9px; }
+#battle .arena-pick { min-height:106px; gap:7px; }
+#battle .coverage-panel { margin-top:20px; }
+#battle .recommendations { margin-top:20px; }
+#battle .rank-card summary { min-height:88px; }
+#battle .rank-card summary:focus-visible { outline:3px solid #72b7ef;outline-offset:-3px; }
+#battle .rank-card[open] { border-color:#8ebde9; }
+#battle .rank-details { background:rgba(255,255,255,.43); }
+#battle .rank-card:not(:first-child) { background:#f1f8ff; }
+#battle .rank-card:first-child { background:#effdf8; }
+@media(max-width:1000px){#battle .arena{grid-template-columns:minmax(160px,1fr) minmax(270px,1.5fr) minmax(160px,1fr);gap:10px}#battle .arena-middle{padding:18px 12px}}
+@media(max-width:700px){#battle .arena{grid-template-columns:1fr 1fr}#battle .arena-middle{grid-column:1/-1;grid-row:2}#battle .arena-side{grid-row:1}}
+
+/* V4.1 coverage analysis */
+.coverage-two-panels{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.coverage-list-panel{border:1px solid #c6d9f0;background:rgba(255,255,255,.48);border-radius:20px;padding:22px;min-width:0}
+.coverage-list-panel h3{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px;color:#354f75}
+.coverage-list-panel h3 small{font-size:13px;color:#6681a3;white-space:nowrap}
+.coverage-filter{display:flex;gap:5px;background:#dceafb;border-radius:12px;padding:5px;width:max-content;max-width:100%;margin-bottom:12px}
+.coverage-filter button{border:0;background:transparent;color:#48678e;font-weight:700;padding:9px 14px;border-radius:9px;cursor:pointer}
+.coverage-filter button.active{background:white;color:#245d9c;box-shadow:0 2px 8px #7295b426}
+.coverage-line{display:flex;align-items:center;gap:10px;min-height:45px;padding:8px 12px;margin:6px 0;border-radius:10px;color:#385476}
+.coverage-line b{flex:1}
+.coverage-icon{width:26px;height:26px;object-fit:contain;flex:none}
+.coverage-line>span:not(.coverage-count){font-weight:800}
+.coverage-positive{background:#dcf4e9}.coverage-positive>span{color:#168568}
+.coverage-negative{background:#f9e3ea}.coverage-negative>span{color:#c62846}
+.coverage-count{display:flex;gap:16px;white-space:nowrap;font-size:13px}
+.coverage-count em{color:#c62846;font-style:normal;font-weight:700}
+.coverage-count strong{color:#168568}
+@media(max-width:900px){.coverage-two-panels{grid-template-columns:1fr}}
+
+/* V4.2: Selected Aniimo versus selected enemy */
+.battle-vs{text-align:center;color:#3a567b}.vs-heading{font-size:clamp(34px,4vw,57px);line-height:1;margin:2px 0 17px;font-weight:950;color:#344c70}.vs-contestants{display:grid;grid-template-columns:minmax(0,1fr) 45px minmax(0,1fr);align-items:center;gap:8px}.vs-fighter{border:1px solid #d0e2f8;border-radius:16px;background:#f4faff;padding:12px 5px;min-width:0}.vs-fighter>b{display:block;margin-bottom:7px}.vs-types{display:flex;justify-content:center;gap:5px;margin-bottom:6px}.vs-fighter .mini-moves{display:flex;justify-content:center;gap:3px}.vs-arrow{font-size:27px;color:#e47c9d}.vs-summary{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:15px 0}.vs-summary span{padding:9px 12px;background:#e9f3ff;border-radius:12px;font-size:12px}.vs-summary b{font-size:16px;margin-left:5px}.vs-summary .good,.vs-move.good{color:#168568}.vs-summary .bad,.vs-move.bad{color:#c62846}.vs-radar-title{font-weight:800;font-size:14px;margin:16px 0 0}.battle-vs svg{display:block;width:min(100%,440px);height:auto;margin:0 auto;overflow:visible}.battle-vs svg text{paint-order:stroke;stroke:#f6faff;stroke-width:2.5px;stroke-linejoin:round}.vs-move-comparison{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left;margin:12px 0 18px}.vs-move-comparison>div{background:#f5faff;border:1px solid #d8e7f9;border-radius:13px;padding:10px;min-width:0}.vs-move-comparison>div>b{font-size:12px}.vs-move-comparison>div>div{display:flex;flex-direction:column;gap:5px;margin-top:8px}.vs-move{display:flex;align-items:center;gap:5px;font-size:11px}.vs-move b{margin-left:auto}.vs-move .type-mini img{width:21px;height:21px}.battle-edit-details{border-top:1px solid #d3e1f3;margin-top:15px;padding-top:14px}.battle-edit-details>summary{cursor:pointer;color:#41658d;font-weight:800;font-size:13px;list-style-position:inside}.battle-edit-details .arena-editor-head{margin-top:15px}.battle-edit-details .arena-editor-head h3{font-size:18px}
+@media(max-width:700px){.vs-move-comparison{grid-template-columns:1fr}.vs-summary{flex-direction:column}}
+
+/* V4.5: glanceable coverage replaces the radar and explanatory panels. */
+.my-team-coverage .coverage-content{display:block}
+.my-team-coverage .radar-explanation,.my-team-coverage .coverage-analysis{display:none}
+.my-team-coverage .team-radar{text-align:left}
+.my-team-coverage .radar-member-switch{display:flex;width:max-content;max-width:100%;margin:14px auto 22px}
+.simple-match-groups{display:grid;gap:13px}
+.simple-match-group{border-radius:18px;padding:16px 18px;border:1px solid #d7e5f5;background:#edf4fc}
+.simple-match-group.good{background:#e1f5ec;border-color:#c5e9da}
+.simple-match-group.bad{background:#fbe5ec;border-color:#f5d1df}
+.simple-match-group.neutral{background:#e9eff7;border-color:#dce6f2}
+.simple-match-group h4{display:flex;align-items:center;gap:9px;margin:0 0 12px;color:#355174;font-size:14px;letter-spacing:.35px}
+.match-dot{width:13px;height:13px;border-radius:50%;background:#91a4bf}
+.simple-match-group.good .match-dot{background:#168568}
+.simple-match-group.bad .match-dot{background:#d02e50}
+.simple-match-chips{display:flex;flex-wrap:wrap;gap:9px}
+.simple-match-chip{display:flex;align-items:center;gap:9px;background:#ffffffb8;border:1px solid #ffffffb8;border-radius:12px;padding:8px 12px;color:#375274;min-width:145px}
+.simple-match-chip img{width:29px;height:29px;object-fit:contain}
+.simple-match-chip b{font-size:13px}
+.simple-match-chip strong{margin-left:auto;font-size:13px;color:#526e8f}
+.simple-match-group.good .simple-match-chip strong{color:#168568}
+.simple-match-group.bad .simple-match-chip strong{color:#c62846}
+.empty-match{color:#6c819b;font-weight:700}
+@media(max-width:650px){.simple-match-chip{min-width:calc(50% - 5px);flex:1}.simple-match-group{padding:12px}.my-team-coverage .radar-member-switch{width:100%;justify-content:center}}
+
+/* V4.6: clear visual summaries in place of radar plots */
+#radar svg, #battleVs svg, .vs-radar-title {display:none!important}
+#radar {display:none!important}
+.my-team-coverage .coverage-content {display:block!important}
+.my-team-coverage #myTeamRadar {width:100%!important;max-width:none!important}
+.my-team-coverage #myRadarExplanation {display:none!important}
+.my-team-coverage .coverage-two-panels {margin-top:22px}
+.coverage-neutral {background:#e8eef7!important}
+.coverage-count {display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.coverage-count em {font-style:normal;color:#c62846;font-weight:800}
+.coverage-count strong {color:#168568}
+@media(max-width:900px){.coverage-two-panels{grid-template-columns:1fr!important}}
+
+/* V4.7: consistent glanceable checker and two-way battle results */
+.checker-layout>.chart-panel{min-width:0}
+.checker-clear-summary{width:100%;max-width:none}
+.checker-clear-summary .simple-match-groups{width:100%;gap:16px}
+.checker-clear-summary .simple-match-group{width:100%;box-sizing:border-box}
+.checker-clear-summary .simple-match-chips{display:flex;flex-wrap:wrap;gap:10px}
+.checker-clear-summary .simple-match-chip{min-width:155px}
+.battle-clear-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px;text-align:left}
+.battle-clear-panel{background:#f4f9ff;border:1px solid #c9dff8;border-radius:20px;padding:17px 14px;min-width:0}
+.battle-clear-panel h3{margin:0 0 5px;font-size:19px;color:#354f75}
+.battle-clear-panel p{font-size:12px;color:#637b9b;margin:0 0 13px}
+.battle-clear-row{display:flex;justify-content:space-between;align-items:center;gap:8px;border-radius:11px;padding:9px 8px;margin:6px 0;background:#e7edf5;color:#4c6383}
+.battle-clear-row.good{background:#ddf5e9;color:#087f5e}
+.battle-clear-row.bad{background:#fce4eb;color:#c7254c}
+.battle-move-label{display:flex;align-items:center;gap:7px;min-width:0;font-size:13px;font-weight:650}
+.battle-clear-row strong{white-space:nowrap;font-size:15px}
+.battle-none-icon{display:inline-flex;align-items:center;justify-content:center;background:#dbe5f4;border-radius:50%;width:24px;height:24px;color:#8196b4;font-size:20px}
+@media(max-width:650px){.battle-clear-columns{grid-template-columns:1fr}.checker-clear-summary .simple-match-chip{min-width:130px}}
+
+/* V4.8 — consistent visual matchups */
+#checker .chart-panel{display:block!important}
+#checker .chart-panel .chart-title{margin-bottom:14px}
+#checker .checker-clear-summary,#checker .checker-clear-summary .simple-match-groups{width:100%!important;max-width:none!important}
+#checker .simple-match-group{width:100%!important}
+.match-mode-caption{font-size:13px;font-weight:750;color:#55769c;margin:10px 0 14px;text-align:center}
+.match-description{font-size:12px;color:#5d7695;margin:0 0 10px;line-height:1.4}
+.simple-match-group .match-description{margin-top:-6px}
+.my-team-coverage .coverage-switch{display:flex!important}
+.battle-view-switch{display:flex;gap:6px;padding:6px;background:#e1edfb;border-radius:15px;margin:20px 0 15px}
+.battle-view-switch button{flex:1;border:0;background:transparent;color:#587299;border-radius:11px;font-size:15px;font-weight:800;padding:10px 8px}
+.battle-view-switch button.active{background:white;color:#285a8a;box-shadow:0 2px 8px #7596c333}
+.battle-view-switch small{display:block;font-size:11px;margin-top:3px;font-weight:650}
+.battle-matched-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;text-align:left}
+.battle-match-side{min-width:0;background:#f5faff;border:1px solid #d0e2f8;border-radius:17px;padding:12px}
+.battle-match-side h3{font-size:16px;margin:0 0 4px;color:#355174}
+.battle-match-side>.simple-match-group{padding:12px;margin-top:10px;border-radius:13px}
+.battle-match-side .simple-match-group h4{font-size:12px;margin-bottom:8px}
+.battle-group-moves{display:grid;gap:6px}
+.battle-group-move{display:flex;align-items:center;gap:6px;background:#ffffffbf;border-radius:10px;padding:7px 6px;color:#355174;font-size:12px}
+.battle-group-move b{font-weight:700}
+.battle-group-move strong{margin-left:auto;white-space:nowrap}
+.battle-match-side .simple-match-group.good strong{color:#168568}
+.battle-match-side .simple-match-group.bad strong{color:#c62846}
+.battle-match-side .type-mini img{width:23px;height:23px}
+@media(max-width:650px){.battle-matched-columns{gap:6px}.battle-match-side{padding:7px}.battle-group-move{font-size:11px}.battle-match-side h3{font-size:12px}}
+
+/* V4.9 inline Arena editing and balanced result columns */
+#battle .arena-pick{position:relative;overflow:visible;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.arena-pick-select{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer;padding:0 12px}
+.arena-inline-edit{position:relative;display:inline-flex;vertical-align:middle}
+.arena-inline-trigger{background:transparent;border:0;padding:2px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;border-radius:8px}
+.arena-inline-trigger:hover,.arena-inline-trigger:focus-visible{background:#d4e8fa;outline:2px solid #8dc8ff}
+.arena-inline-menu{position:absolute;z-index:150;top:calc(100% + 5px);left:50%;transform:translateX(-50%);width:156px;display:grid;grid-template-columns:repeat(3,1fr);gap:5px;background:#f8fbff;border:1px solid #a7c9ef;border-radius:13px;padding:8px;box-shadow:0 10px 24px #294d7a44}
+.arena-inline-menu[hidden]{display:none!important}
+.arena-inline-menu button{border:0;background:#e9f2fd;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;min-height:38px}
+.arena-inline-menu button:hover{background:#cde7ff}
+.arena-inline-menu .type-mini img{width:27px;height:27px}
+#battle .arena-picks{overflow:visible}
+#battle .arena-pick .mini-types,#battle .arena-pick .mini-moves{display:flex;justify-content:center;align-items:center;gap:2px}
+.battle-matched-columns{align-items:start}
+.battle-match-side{display:grid;grid-template-rows:auto auto repeat(3,minmax(0,auto));align-content:start}
+.battle-match-side>.simple-match-group{min-height:0}
+.battle-group-move{min-height:37px}
+@media(max-width:1100px){.arena-inline-menu{width:138px}}
+/* Stable equal-width dropdown columns, whether a value is chosen or None */
+.slot-card .field-grid.moves{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.slot-card .field-grid.moves>label{min-width:0;width:100%}
+.slot-card .field-grid.moves .image-picker,.slot-card .field-grid.moves .picker-current{width:100%;box-sizing:border-box}
+.slot-card .field-grid.moves .picker-current{min-height:45px}
+.slot-card .field-grid.moves .field-tab{white-space:nowrap}
+@media(max-width:680px){.slot-card .field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* V5.0 consistency and alignment */
+#teams .slot-card .visual-fields>.field-grid.moves>label,#teams .slot-card .visual-fields>.field-grid.moves>label>.image-picker{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current,#teams .slot-card .visual-fields>.field-grid.moves .picker-current:has(.picker-none){width:100%!important;height:46px!important;min-height:46px!important;max-height:46px!important;padding:0!important;box-sizing:border-box!important;border-radius:9px!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current .picker-none{width:100%!important;height:46px!important;min-height:46px!important;box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current img{height:46px!important;max-height:46px!important;width:100%!important;max-width:100%!important;object-fit:fill!important;aspect-ratio:auto!important}
+#teams .slot-card .visual-fields>.field-grid.moves{align-items:start!important}
+.member-type-icons{display:flex;gap:3px;justify-content:center;align-items:center;margin-top:3px;min-height:20px}
+.member-type-icons .type-mini img{width:20px!important;height:20px!important}
+.radar-member-switch button{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:54px}
+.battle-side-types{display:flex;gap:5px;align-items:center;min-height:24px;margin:4px 0}
+.battle-side-types .type-mini img{width:24px;height:24px}
+.arena-inline-menu{z-index:99999!important;overscroll-behavior:contain}
+
+/* V5.1: one clearly directional matchup panel per tab */
+.battle-direction{background:#e5f1ff;border:1px solid #c3ddf8;border-radius:17px;padding:14px;margin:14px 0 12px;text-align:center}
+.battle-direction.defending{background:#eeeaff;border-color:#d7cef7}
+.battle-direction h3{font-size:19px;font-weight:850;color:#314e74;margin:0 0 12px}
+.battle-direction-flow{display:flex;align-items:center;justify-content:space-around;gap:8px}
+.battle-direction-person{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;color:#34567d}
+.battle-direction-person .battle-side-types{justify-content:center;margin:0}
+.battle-direction-arrow{font-size:34px;font-weight:900;color:#e17ba6;line-height:1}
+.battle-one-result{text-align:left;display:grid;gap:10px}
+.battle-one-result>.simple-match-group{padding:13px;border-radius:14px}
+.battle-one-result>.simple-match-group h4{font-size:13px;margin:0 0 8px;color:#345174}
+.battle-one-result .battle-group-moves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.battle-one-result .battle-group-move{background:#ffffffc9;border-radius:10px;display:flex;align-items:center;gap:7px;padding:8px;min-width:0}
+.battle-one-result .battle-group-move b{font-size:13px;flex:1}
+.battle-one-result .battle-group-move strong{font-size:13px}
+.battle-one-result .simple-match-group.good{background:#dff5eb;border:1px solid #bce9d6}
+.battle-one-result .simple-match-group.bad{background:#fce6ed;border:1px solid #f7ccdb}
+.battle-one-result .simple-match-group.neutral{background:#e8eff8;border:1px solid #d6e3f2}
+.battle-one-result .simple-match-group.good strong{color:#168568}
+.battle-one-result .simple-match-group.bad strong{color:#c62846}
+@media(max-width:540px){.battle-one-result .battle-group-moves{grid-template-columns:1fr}.battle-direction-person{font-size:10px}.battle-direction h3{font-size:16px}}
+
+/* V5.2: simultaneous attack directions and matchup summary */
+.battle-combined-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px;align-items:stretch}
+.battle-combined-panel{min-width:0;background:#f3f9ff;border:1px solid #cde0fa;border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.battle-combined-panel h3{margin:0;color:#314e74;font-size:17px;text-align:center;font-weight:850}
+.battle-combined-sub{margin:0 0 3px;color:#607b9e;font-size:12px;text-align:center}
+.battle-combined-panel .simple-match-group{padding:10px;border-radius:13px}
+.battle-combined-panel .simple-match-group.good{background:#dff5eb;border:1px solid #bce9d6}
+.battle-combined-panel .simple-match-group.bad{background:#fce6ed;border:1px solid #f7ccdb}
+.battle-combined-panel .simple-match-group.neutral{background:#e8eff8;border:1px solid #d6e3f2}
+.battle-combined-panel .simple-match-group h4{font-size:11px;margin:0 0 7px;color:#345174}
+.battle-combined-panel .battle-group-moves{display:grid;grid-template-columns:1fr;gap:6px}
+.battle-combined-panel .battle-group-move{background:#ffffffd9;border-radius:9px;display:flex;align-items:center;gap:5px;padding:7px;min-width:0}
+.battle-combined-panel .battle-group-move b{flex:1;font-size:12px}
+.battle-combined-panel .battle-group-move strong{font-size:12px;white-space:nowrap}
+.battle-combined-panel .simple-match-group.good strong{color:#168568}
+.battle-combined-panel .simple-match-group.bad strong{color:#c62846}
+.battle-match-rating{margin-top:14px;padding:16px;border-radius:16px;text-align:center;border:1px solid #d6e3f2;background:#e8eff8}
+.battle-match-rating.good{background:#dff5eb;border-color:#bce9d6}
+.battle-match-rating.bad{background:#fce6ed;border-color:#f7ccdb}
+.battle-match-rating h3{font-size:20px;font-weight:900;margin:0 0 5px;color:#314e74}
+.battle-match-rating p{margin:0;font-size:13px;color:#4c6689}
+@media(max-width:600px){.battle-combined-grid{grid-template-columns:1fr}}
+
+
+/* V5.4 — phone-first layout repair; calculations and localStorage unchanged. */
+@media (max-width:700px){
+  html,body{max-width:100%;overflow-x:clip}
+  .shell,.panel,#checker,#teams,#battle{min-width:0;max-width:100%}
+  .panel,.arena-side,.arena-middle,.slot-card{min-width:0}
+  /* Avoid dropdowns running through other sections or beyond the screen. */
+  .image-picker:has(.picker-options:not([hidden])){z-index:300!important}
+  .picker-options{position:fixed!important;left:12px!important;right:12px!important;bottom:12px!important;top:auto!important;width:auto!important;min-width:0!important;max-width:none!important;max-height:min(58dvh,440px)!important;overflow-y:auto!important;overscroll-behavior:contain;z-index:99999!important;padding:12px!important;border:2px solid #9cc4ee!important;box-shadow:0 0 0 100vmax #243c6080,0 15px 50px #243c6080!important}
+  .picker-option{min-width:0!important}
+  .picker-option img{max-width:100%!important}
+  /* Every result is a full-width row, never two squeezed columns. */
+  .simple-match-chips{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:8px!important}
+  .simple-match-chip{width:100%!important;min-width:0!important;max-width:100%!important;display:flex!important;gap:10px!important;overflow:hidden}
+  .simple-match-chip b{min-width:0;overflow-wrap:anywhere}
+  .simple-match-chip strong{flex:none;max-width:48%;text-align:right;white-space:normal;overflow-wrap:break-word;line-height:1.2}
+  .simple-match-group{min-width:0;overflow:hidden}
+  .simple-match-group h4{overflow-wrap:anywhere}
+  /* Five tabs wrap as a tidy grid rather than irregular floating pills. */
+  #teams .radar-member-switch,.my-team-coverage .radar-member-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;max-width:100%!important;gap:6px!important;margin:14px auto 18px!important}
+  #teams .radar-member-switch button,.my-team-coverage .radar-member-switch button{width:100%!important;min-width:0!important;max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere;text-align:center}
+  #teams .radar-member-switch button:first-child,.my-team-coverage .radar-member-switch button:first-child{grid-column:1/-1}
+  /* Put entire friendly team above enemy team; VS results below both. */
+  #battle .arena{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+  #battle .arena-side,#battle .arena-middle{grid-column:1!important;grid-row:auto!important;width:100%!important;min-width:0!important;padding:14px!important}
+  #battle .arena-picks{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  #battle .arena-pick{width:100%!important;min-width:0!important;max-width:100%!important;min-height:130px!important;padding:10px 5px!important;gap:6px!important}
+  #battle .arena-pick .mini-types,#battle .arena-pick .mini-moves{max-width:100%!important;min-width:0!important;display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:4px!important}
+  #battle .arena-pick .type-mini{flex:0 0 auto!important;max-width:calc(25% - 3px)!important}
+  #battle .arena-pick .type-mini img{max-width:100%!important;width:29px!important;height:29px!important;object-fit:contain!important}
+  #battle .arena-inline-edit{max-width:100%!important;min-width:0!important}
+  #battle .arena-inline-trigger{max-width:100%!important;padding:1px!important}
+  #battle .arena-inline-menu{position:fixed!important;top:auto!important;bottom:12px!important;left:12px!important;right:12px!important;transform:none!important;width:auto!important;max-width:none!important;max-height:50dvh!important;overflow-y:auto!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;z-index:99999!important;box-shadow:0 0 0 100vmax #243c6080,0 15px 50px #243c6080!important}
+  #battle .arena-inline-menu button{min-width:0!important}
+  .battle-combined-grid,.battle-matched-columns{grid-template-columns:minmax(0,1fr)!important}
+  .vs-contestants{grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr)!important;gap:5px!important}
+  .vs-fighter{min-width:0!important}
+  .vs-fighter .mini-moves{flex-wrap:wrap!important}
+}
+@media(max-width:380px){
+  #battle .arena-pick .type-mini img{width:25px!important;height:25px!important}
+  #battle .arena-pick{padding:8px 3px!important}
+}
+
+/* V5.5: compact mobile picker and fixed-size battle controls. */
+@media (max-width:700px){
+  /* A small scrollable selection sheet instead of a nearly full-screen list. */
+  .picker-options{
+    position:fixed!important;top:50%!important;bottom:auto!important;
+    left:50%!important;right:auto!important;transform:translate(-50%,-50%)!important;
+    width:min(340px,calc(100vw - 36px))!important;max-width:calc(100vw - 36px)!important;
+    max-height:min(48dvh,340px)!important;overflow-y:auto!important;
+    display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:5px!important;padding:9px!important;
+  }
+  .picker-options[hidden]{display:none!important}
+  .picker-options .picker-option{min-height:42px!important;padding:4px!important}
+  .picker-options .picker-option img{height:34px!important;width:100%!important;max-width:100%!important;object-fit:contain!important}
+  /* The previous max-width:25% rule squeezed nested buttons to dots. */
+  #battle .arena-pick .type-mini{width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important;max-width:none!important;flex:none!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:0!important;box-sizing:border-box!important}
+  #battle .arena-pick .type-mini img{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;max-width:none!important;object-fit:contain!important}
+  #battle .arena-pick .arena-inline-edit{flex:0 0 30px!important;width:30px!important;min-width:30px!important;max-width:30px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important}
+  #battle .arena-pick .arena-inline-trigger{width:30px!important;height:32px!important;min-width:30px!important;min-height:32px!important;max-width:none!important;flex:none!important;padding:0!important}
+  #battle .arena-pick .mini-types,#battle .arena-pick .mini-moves{width:100%!important;max-width:100%!important;gap:5px!important;flex-wrap:wrap!important;align-items:center!important;justify-content:center!important}
+  #battle .arena-pick{min-height:140px!important}
+  #battle .arena-inline-menu{bottom:12px!important;max-height:40dvh!important;grid-template-columns:repeat(5,minmax(0,1fr))!important}
+}
+@media(max-width:380px){
+  #battle .arena-pick .type-mini,#battle .arena-pick .arena-inline-edit,#battle .arena-pick .arena-inline-trigger{width:28px!important;min-width:28px!important;max-width:28px!important}
+  #battle .arena-pick .type-mini img{width:26px!important;height:26px!important;min-width:26px!important;min-height:26px!important}
+  #battle .arena-pick .mini-moves{gap:3px!important}
+}
+
+/* V5.6: phone arena cards: reserve enough space for each editor control. */
+@media(max-width:700px){
+ #battle .arena-picks{grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ #battle .arena-pick{min-height:112px!important;padding:14px 10px!important;gap:8px!important}
+ #battle .arena-pick .mini-types,#battle .arena-pick .mini-moves{display:flex!important;flex-flow:row nowrap!important;gap:10px!important;justify-content:center!important;width:100%!important;overflow:visible!important}
+ #battle .arena-pick .arena-inline-edit{display:inline-flex!important;position:relative!important;flex:0 0 40px!important;width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important;align-items:center!important;justify-content:center!important}
+ #battle .arena-pick .arena-inline-trigger{display:inline-flex!important;flex:0 0 40px!important;width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important;min-height:40px!important;padding:0!important;align-items:center!important;justify-content:center!important}
+ #battle .arena-pick .type-mini{display:inline-flex!important;flex:0 0 36px!important;width:36px!important;min-width:36px!important;max-width:36px!important;height:36px!important;min-height:36px!important;max-height:36px!important;align-items:center!important;justify-content:center!important}
+ #battle .arena-pick .type-mini img{display:block!important;width:32px!important;min-width:32px!important;max-width:32px!important;height:32px!important;min-height:32px!important;max-height:32px!important;object-fit:contain!important}
+ #battle .arena-pick .type-mini.empty{font-size:24px!important;line-height:1!important}
+}
+
+/* V5.7 — equal-size team pickers, preserve original badge aspect ratio */
+#teams .slot-card .visual-fields>.field-grid:first-child{max-width:100%!important;gap:16px!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#teams .slot-card .visual-fields>.field-grid:first-child>label{min-width:0;width:100%;max-width:100%}
+#teams .slot-card .visual-fields .field-grid .image-picker,#teams .slot-card .visual-fields .field-grid .picker-current{width:100%!important;min-width:0!important;box-sizing:border-box!important}
+#teams .slot-card .visual-fields .picker-current{height:52px!important;min-height:52px!important;max-height:52px!important;padding:0 8px!important}
+#teams .slot-card .visual-fields .picker-current img{width:100%!important;height:44px!important;max-width:calc(100% - 20px)!important;max-height:44px!important;object-fit:contain!important;aspect-ratio:auto!important}
+#teams .slot-card .visual-fields .picker-current:has(.picker-none){height:52px!important;min-height:52px!important;max-height:52px!important}
+#teams .slot-card .visual-fields .picker-current .picker-none{height:44px!important;min-height:44px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current img{object-fit:contain!important;height:44px!important;max-height:44px!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current{height:52px!important;min-height:52px!important;max-height:52px!important}
+.battle-match-rating.okay{background:#fff1d7!important;border-color:#edc67b!important;color:#805e25!important}
+@media(max-width:700px){#teams .slot-card .visual-fields>.field-grid:first-child{gap:10px!important}}
+
+/* V5.8 dropdown viewport fix: desktop menus are positioned by JavaScript. */
+@media(min-width:701px){
+ .picker-options:not([hidden]){overscroll-behavior:contain;scrollbar-gutter:stable}
+}
+
+
+/* V5.8 visual consistency: all type selectors have a stable box even when empty. */
+#teams .slot-card .visual-fields>.field-grid:first-child{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;width:100%!important;max-width:520px!important;margin-inline:auto!important}
+#teams .slot-card .visual-fields>.field-grid:first-child>label{min-width:0!important;width:100%!important}
+#teams .slot-card .visual-fields>.field-grid:first-child .image-picker{width:100%!important;max-width:100%!important}
+#teams .slot-card .visual-fields>.field-grid:first-child .picker-current,
+#teams .slot-card .visual-fields>.field-grid:first-child .picker-current:has(.picker-none){width:100%!important;min-width:0!important;height:52px!important;min-height:52px!important;max-height:52px!important;background:#d9e7fa!important;border:1px solid #c3d9f4!important;border-radius:10px!important;box-sizing:border-box!important;overflow:hidden!important;padding:0!important}
+#teams .slot-card .visual-fields>.field-grid:first-child .picker-current:has(img){background:transparent!important;border-color:transparent!important}
+#teams .slot-card .visual-fields>.field-grid:first-child .picker-current img{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;aspect-ratio:auto!important;object-fit:fill!important}
+#teams .slot-card .visual-fields>.field-grid:first-child .picker-current .picker-none{height:100%!important;min-height:0!important;width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0 20px!important;box-sizing:border-box!important}
+#teams .slot-card .visual-fields>.field-grid.moves{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important}
+#teams .slot-card .visual-fields>.field-grid.moves>label{min-width:0!important;width:100%!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current,
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current:has(.picker-none){height:52px!important;min-height:52px!important;max-height:52px!important;background:#d9e7fa!important;border:1px solid #c3d9f4!important;border-radius:10px!important;overflow:hidden!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current:has(img){background:transparent!important;border-color:transparent!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current img{width:100%!important;max-width:100%!important;height:100%!important;max-height:100%!important;object-fit:fill!important;aspect-ratio:auto!important}
+#teams .slot-card .visual-fields>.field-grid.moves .picker-current .picker-none{height:100%!important;min-height:0!important}
+/* Visually separate every Aniimo tab rather than floating inside one shared pill. */
+#teams .my-team-coverage .radar-member-switch{display:flex!important;justify-content:center!important;flex-wrap:wrap!important;gap:9px!important;width:fit-content!important;max-width:100%!important;background:transparent!important;padding:0!important;margin:14px auto 18px!important}
+#teams .my-team-coverage .radar-member-switch button{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important;min-height:70px!important;min-width:110px!important;width:auto!important;max-width:none!important;padding:12px 15px!important;background:#e3effc!important;border:1px solid #cbdff7!important;border-radius:12px!important;box-shadow:none!important;color:#536e92!important;white-space:nowrap!important}
+#teams .my-team-coverage .radar-member-switch button.active{background:#fff!important;border-color:#c3d8f3!important;box-shadow:0 3px 10px #7ba5cf24!important;color:#316997!important}
+#teams .my-team-coverage .radar-member-switch button:first-child{grid-column:auto!important}
+#teams .my-team-coverage .radar-member-switch .member-type-icons{display:flex!important;gap:5px!important;justify-content:center!important;min-height:21px!important}
+/* Defense and Offense are two complete, equally sized buttons. */
+#checker .checker-mode-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;background:transparent!important;padding:0!important}
+#checker .checker-mode-switch button,#teams .my-team-coverage .coverage-switch button{width:100%!important;min-width:0!important;min-height:52px!important;border-radius:11px!important;border:1px solid #cbdff7!important;background:#e3effc!important;color:#536e92!important;padding:10px 12px!important;box-shadow:none!important}
+#checker .checker-mode-switch button.active,#teams .my-team-coverage .coverage-switch button.active{background:white!important;color:#316997!important;border-color:#c3d8f3!important;box-shadow:0 3px 10px #7ba5cf24!important}
+#teams .my-team-coverage .coverage-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;background:transparent!important;padding:0!important}
+@media(max-width:700px){
+ #teams .slot-card .visual-fields>.field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #teams .my-team-coverage .radar-member-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important}
+ #teams .my-team-coverage .radar-member-switch button{width:100%!important;min-width:0!important;white-space:normal!important}
+ #teams .my-team-coverage .radar-member-switch button:first-child{grid-column:1/-1!important}
+}
+
+/* V5.8 centered, simplified navigation */
+.top{justify-content:center!important;text-align:center!important;padding:17px 20px!important}
+.top .brand{justify-content:center!important}
+.top .brand b{font-size:clamp(22px,3vw,30px)!important;letter-spacing:-.6px!important}
+.top .brand small,.top .save-indicator,.intro{display:none!important}
+.tabs{display:flex!important;justify-content:center!important;flex-wrap:wrap!important;gap:12px!important;margin:22px auto 26px!important;overflow:visible!important;border-bottom:0!important;padding:0!important}
+.tabs button{flex:0 1 auto!important;min-width:160px!important;min-height:54px!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;border-radius:12px!important;border:1px solid #c5d9f3!important;background:#e4effc!important;color:#4c6689!important;box-shadow:none!important}
+.tabs button.active{background:#f8daee!important;color:#82547c!important;border-color:#f3c5e3!important}
+@media(max-width:650px){.tabs{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}.tabs button{min-width:0!important;width:100%!important;padding:12px 6px!important}.top .brand b{font-size:22px!important}}
+
+/* V5.9: full-size None and non-overlapping in-flow menus */
+#checker .image-picker,#teams .image-picker,#arenaEditor .image-picker{width:100%!important;min-width:0!important}
+#checker .picker-current,#teams .picker-current,#arenaEditor .picker-current{width:100%!important;height:54px!important;min-height:54px!important;max-height:54px!important;padding:0!important;box-sizing:border-box!important;border-radius:10px!important;overflow:hidden!important}
+#checker .picker-current img,#teams .picker-current img,#arenaEditor .picker-current img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:fill!important;aspect-ratio:auto!important;border-radius:10px!important}
+#checker .picker-current:has(.picker-none),#teams .picker-current:has(.picker-none),#arenaEditor .picker-current:has(.picker-none){background:#d9e7fa!important;border:1px solid #c3d9f4!important}
+#checker .picker-current .picker-none,#teams .picker-current .picker-none,#arenaEditor .picker-current .picker-none{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:100%!important;min-height:0!important;padding:0 23px!important;background:transparent!important;box-sizing:border-box!important;color:#486487!important;font-weight:800!important}
+#checker .picker-chevron,#teams .picker-chevron,#arenaEditor .picker-chevron{right:8px!important;background:transparent!important;border:0!important;color:#fff!important;pointer-events:none!important}
+#checker .picker-current:has(.picker-none) .picker-chevron,#teams .picker-current:has(.picker-none) .picker-chevron,#arenaEditor .picker-current:has(.picker-none) .picker-chevron{color:#486487!important}
+.image-picker:has(>.picker-options:not([hidden])){z-index:2!important}
+.image-picker>.picker-options:not([hidden]){display:flex!important;flex-direction:column!important;gap:6px!important;position:relative!important;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;transform:none!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;max-height:238px!important;overflow-y:auto!important;overscroll-behavior:contain!important;margin:7px 0 0!important;padding:7px!important;border:1px solid #b8d2f0!important;border-radius:12px!important;background:#f7fbff!important;box-shadow:0 4px 12px #7397c322!important;scrollbar-gutter:auto!important}
+.image-picker>.picker-options[hidden]{display:none!important}
+.image-picker>.picker-options .picker-option{flex:0 0 auto!important;min-width:0!important;width:100%!important;min-height:44px!important;padding:3px!important}
+.image-picker>.picker-options .picker-option img{width:100%!important;height:43px!important;max-height:43px!important;max-width:100%!important;object-fit:fill!important}
+.image-picker>.picker-options .picker-option .picker-none{display:flex!important;align-items:center!important;justify-content:center!important;min-height:43px!important;width:100%!important;background:#d9e7fa!important;border-radius:8px!important;font-weight:800!important;color:#486487!important}
+#teams .slot-card{align-self:start}
+#teams .slot-card .field-grid>label{align-self:start;min-width:0}
+@media(max-width:700px){#teams .slot-card .visual-fields>.field-grid.moves{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* V6.0: overlays never take space in the Aniimo card grid. */
+.image-picker>.picker-options:not([hidden]){
+ position:fixed!important; display:flex!important; flex-direction:column!important;
+ gap:6px!important; height:auto!important; overflow-y:auto!important;
+ overscroll-behavior:contain!important; box-sizing:border-box!important;
+ box-shadow:0 12px 28px #41658b55!important;
+}
+.image-picker:has(>.picker-options:not([hidden])){z-index:9999!important}
+#teams .slot-card .visual-fields>.field-grid.moves{align-items:start!important}
+#teams .slot-card .visual-fields>.field-grid.moves>label{align-self:start!important}
+/* Preserve original icon aspect ratio rather than stretching badge artwork. */
+#checker .picker-current img,#teams .picker-current img,#arenaEditor .picker-current img{
+ object-fit:contain!important;
+}
+@media(max-width:700px){
+ .image-picker>.picker-options:not([hidden]){box-shadow:0 0 0 100vmax #243c6080,0 15px 50px #243c6080!important}
+}
+
+/* V6.1: Stable, non-stretching selectors and overlay menus. */
+#checker .field-grid,#teams .slot-card .field-grid,#teams .slot-card .field-grid.moves {align-items:start!important;}
+#checker .field-grid>label,#teams .slot-card .field-grid>label {min-width:0!important;max-width:100%!important;align-self:start!important;}
+#checker .image-picker,#teams .image-picker {width:100%!important;min-width:0!important;max-width:100%!important;}
+#checker .picker-current,#teams .picker-current {display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;max-width:100%!important;height:56px!important;min-height:56px!important;max-height:56px!important;padding:0 9px!important;overflow:hidden!important;box-sizing:border-box!important;border-radius:11px!important;}
+#checker .picker-current img,#teams .picker-current img {width:100%!important;max-width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important;aspect-ratio:240 / 58!important;flex:0 1 auto!important;}
+#checker .picker-current .picker-none,#teams .picker-current .picker-none {width:100%!important;height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:14px!important;box-sizing:border-box!important;}
+#teams .slot-card .visual-fields>.field-grid:first-child,#teams .slot-card .visual-fields>.field-grid.moves {align-items:start!important;}
+#teams .slot-card .visual-fields>.field-grid.moves>label:last-child {grid-column:auto!important;max-width:100%!important;width:100%!important;margin:0!important;}
+/* A dropdown is a floating overlay: it must never add height or move other cards. */
+.image-picker>.picker-options:not([hidden]) {position:fixed!important;display:flex!important;flex-direction:column!important;box-sizing:border-box!important;overflow-y:auto!important;overscroll-behavior:contain!important;margin:0!important;z-index:999999!important;max-height:min(340px,65dvh)!important;box-shadow:0 14px 35px #41658b55!important;}
+.image-picker>.picker-options[hidden] {display:none!important;}
+.image-picker>.picker-options .picker-option img {object-fit:contain!important;aspect-ratio:240 / 58!important;}
+#teams .slot-card {min-width:0!important;}
+@media(max-width:700px){#teams .slot-card .visual-fields>.field-grid.moves {grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+
+/* V6.3 centered element picker — fixed overlay never affects card sizing. */
+.centered-element-layer{position:fixed;inset:0;z-index:2147483000;background:rgba(31,48,82,.40);display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+.centered-element-dialog{box-sizing:border-box;width:min(420px,100%);max-height:min(640px,calc(100dvh - 32px));overflow:auto;background:#f5f9ff;border:1px solid #bed5f4;border-radius:22px;box-shadow:0 22px 65px rgba(25,51,90,.25);padding:18px}
+.centered-element-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px;color:#355176;font-size:18px}
+.centered-element-close{width:40px;height:40px;border:0;border-radius:12px;background:#dceafb;color:#355176;font-size:30px;line-height:1;cursor:pointer;flex:none}
+.centered-element-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.centered-element-grid .centered-element-option{min-width:0;width:100%;height:88px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;background:#e3efff;border:2px solid transparent;border-radius:13px;cursor:pointer;padding:8px;color:#355176;font-weight:700}
+.centered-element-grid .centered-element-option:hover,.centered-element-grid .centered-element-option:focus-visible{border-color:#6caff5;background:#d5e7fc}
+.centered-element-grid .centered-element-option img{width:54px;height:54px;object-fit:contain;max-width:100%}
+.centered-element-grid .centered-element-option .type-mini{width:54px;height:54px;display:flex;align-items:center;justify-content:center}
+.centered-element-grid .centered-element-option .type-mini img{width:54px;height:54px;object-fit:contain}
+.centered-element-grid .centered-element-option .picker-none{font-size:15px}
+@media(max-width:480px){.centered-element-dialog{padding:14px;border-radius:18px}.centered-element-grid{gap:8px}.centered-element-grid .centered-element-option{height:76px}.centered-element-grid .centered-element-option img,.centered-element-grid .centered-element-option .type-mini,.centered-element-grid .centered-element-option .type-mini img{width:46px;height:46px}}
+
+/* V6.4 — decorative accents in blue; semantic matchup colors unchanged. */
+.logo{background:#c9e1fc!important;color:#315f95!important}
+.tabs button.active{background:#bdd9fa!important;color:#244f83!important;border-color:#7caeea!important}
+.team-card.selected{background:rgba(194,220,250,.94)!important;border-color:#75a9e7!important}
+.team-card.selected small{color:#42658f!important}
+.primary{background:#c0ddfa!important;color:#285786!important;border-color:#8eb9eb!important}
+.primary:hover,.tabs button.active:hover{background:#a9cff8!important}
+.enemy-pick.picked{background:#dceeff!important;border-color:#68a8ee!important}
+.battle-vs .vs-arrow,.vs-arrow{color:#5d91cc!important}
+button:focus-visible,input:focus-visible,select:focus-visible{outline-color:#4b91df!important}
+
+/* V6.5 consistent selector sizing: selected and empty have identical geometry */
+#teams .slot-card .visual-fields .picker-current {height:56px!important;min-height:56px!important;max-height:56px!important;width:100%!important;min-width:0!important;box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;padding:0 7px!important;border-radius:11px!important}
+#teams .slot-card .visual-fields .picker-current img {height:100%!important;width:100%!important;max-height:100%!important;max-width:100%!important;object-fit:contain!important;aspect-ratio:auto!important}
+#teams .slot-card .visual-fields .picker-current .picker-none {font-size:16px!important;font-weight:850!important;letter-spacing:.02em!important;height:100%!important;width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important}
+#teams .slot-card .visual-fields .field-grid {align-items:end!important}
+#teams .slot-card .visual-fields .field-grid > label {min-width:0!important}
+#aniimo-toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);z-index:2147483001;background:#dceafb;border:1px solid #8fb9ea;border-radius:12px;padding:10px 17px;color:#254c7d;font-weight:750;box-shadow:0 8px 25px #29486b33;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}#aniimo-toast.visible{opacity:1;transform:translate(-50%,0)}
+.copy-team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.copy-team-grid button{background:#e3efff;border:1px solid #b9d5f7;border-radius:11px;color:#355176;padding:14px 8px;font-weight:800;cursor:pointer}.copy-team-grid button:disabled{opacity:.4;cursor:default}.copy-team-grid small{display:block;margin-top:4px;font-weight:500}
+
+/* V6.6: buttons are HTML, not stretched text baked into badge images. */
+#teams .slot-card .visual-fields .picker-current.uniform-type-button{
+  position:relative!important;width:100%!important;height:56px!important;min-height:56px!important;max-height:56px!important;
+  padding:0 28px 0 9px!important;display:flex!important;align-items:center!important;justify-content:center!important;
+  box-sizing:border-box!important;overflow:hidden!important;border-radius:10px!important;
+  background:#d9e7fa!important;border:1px solid #c3d9f4!important;color:#486487!important;
+}
+#teams .slot-card .visual-fields .picker-current.uniform-selected{
+  background:var(--selected-type-color)!important;border:1px solid transparent!important;color:white!important;
+}
+#teams .slot-card .visual-fields .uniform-type-name{
+  font-family:inherit!important;font-size:15px!important;font-weight:850!important;letter-spacing:.025em!important;
+  line-height:1.1!important;white-space:nowrap!important;text-align:center!important;flex:1 1 auto!important;
+  min-width:0!important;
+}
+#teams .slot-card .visual-fields .uniform-type-icon{
+  position:absolute!important;left:8px!important;top:50%!important;transform:translateY(-50%)!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;width:32px!important;height:32px!important;
+}
+#teams .slot-card .visual-fields .uniform-type-icon img{
+  display:block!important;width:30px!important;height:30px!important;max-width:30px!important;max-height:30px!important;
+  object-fit:contain!important;aspect-ratio:1!important;
+}
+#teams .slot-card .visual-fields .uniform-type-button .picker-chevron{
+  position:absolute!important;right:9px!important;top:50%!important;transform:translateY(-50%)!important;
+  color:inherit!important;font-size:16px!important;
+}
+@media(max-width:600px){
+ #teams .slot-card .visual-fields .uniform-type-name{font-size:12px!important}
+ #teams .slot-card .visual-fields .uniform-type-icon{left:4px!important;width:24px!important;height:24px!important}
+ #teams .slot-card .visual-fields .uniform-type-icon img{width:23px!important;height:23px!important}
+}
+
+/* V6.7: Restore solid colored selector backgrounds after legacy transparent rules. */
+#teams .slot-card .visual-fields button.picker-current.uniform-type-button.uniform-selected,
+#arenaEditor .visual-fields button.picker-current.uniform-type-button.uniform-selected,
+#checker .visual-fields button.picker-current.uniform-type-button.uniform-selected {
+  background-color:var(--selected-type-color,#5098e4)!important;
+  background-image:none!important;
+  border-color:transparent!important;
+  color:#fff!important;
+  opacity:1!important;
+}
+#teams .slot-card .visual-fields button.picker-current.uniform-type-button.uniform-empty,
+#arenaEditor .visual-fields button.picker-current.uniform-type-button.uniform-empty,
+#checker .visual-fields button.picker-current.uniform-type-button.uniform-empty {
+  background:#d9e7fa!important;
+  border:1px solid #c3d9f4!important;
+  color:#486487!important;
+}
+#teams .slot-card .visual-fields .uniform-type-name,
+#arenaEditor .visual-fields .uniform-type-name,
+#checker .visual-fields .uniform-type-name {color:inherit!important;text-shadow:none!important;}
+#teams .slot-card .visual-fields .uniform-type-icon img {object-fit:contain!important;}
+
+/* V6.8: fixed three-column geometry for compact move buttons.
+   Icon and arrow take their own columns; the text cannot overlap either. */
+#teams .slot-card .visual-fields button.picker-current.uniform-type-button{
+  display:grid!important;
+  grid-template-columns:30px minmax(0,1fr) 14px!important;
+  column-gap:3px!important;
+  align-items:center!important;
+  justify-items:center!important;
+  padding:0 7px!important;
+  width:100%!important;
+  min-width:0!important;
+  overflow:hidden!important;
+}
+#teams .slot-card .visual-fields .uniform-type-button .uniform-type-icon{
+  position:static!important;
+  transform:none!important;
+  grid-column:1!important;
+  width:28px!important;height:28px!important;
+  min-width:0!important;
+}
+#teams .slot-card .visual-fields .uniform-type-button .uniform-type-icon img{
+  display:block!important;width:27px!important;height:27px!important;
+  max-width:27px!important;max-height:27px!important;
+  object-fit:contain!important;
+}
+#teams .slot-card .visual-fields .uniform-type-button .uniform-type-name{
+  grid-column:2!important;
+  display:block!important;
+  min-width:0!important;width:100%!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  letter-spacing:0!important;
+  line-height:1.1!important;
+  white-space:nowrap!important;
+  text-align:center!important;
+  overflow:hidden!important;
+  text-overflow:clip!important;
+}
+#teams .slot-card .visual-fields .uniform-type-button .picker-chevron{
+  position:static!important;
+  transform:none!important;
+  grid-column:3!important;
+  width:14px!important;
+  font-size:14px!important;
+  text-align:center!important;
+  line-height:1!important;
+}
+#teams .slot-card .visual-fields .uniform-type-button.uniform-empty .uniform-type-name{
+  grid-column:1 / 3!important;
+  text-align:center!important;
+  font-size:15px!important;
+}
+@media(max-width:420px){
+ #teams .slot-card .visual-fields button.picker-current.uniform-type-button{
+   grid-template-columns:23px minmax(0,1fr) 11px!important;
+   gap:2px!important;padding:0 4px!important;
+ }
+ #teams .slot-card .visual-fields .uniform-type-button .uniform-type-icon,
+ #teams .slot-card .visual-fields .uniform-type-button .uniform-type-icon img{
+   width:22px!important;height:22px!important;
+ }
+ #teams .slot-card .visual-fields .uniform-type-button .uniform-type-name{font-size:10px!important}
+}
+
+/* V6.9: compact team selector and side-by-side editing / matchup workspace */
+#teams .team-grid{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:7px!important;margin:10px 0 14px!important}
+#teams .team-card{min-height:47px!important;padding:10px 5px!important;text-align:center!important;border-radius:11px!important;display:flex;align-items:center;justify-content:center}
+#teams .team-card b{font-size:13px!important;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#teams .team-card small,#teams .team-card .pips{display:none!important}
+#teams .team-workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+#teams .team-workspace>.panel{min-width:0;margin:0!important}
+#teams .team-editor-panel{padding:16px!important}
+#teams .team-editor-panel .slot-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+#teams .team-editor-panel .slot-card{padding:10px!important}
+#teams .team-editor-panel .slot-card h4{margin-bottom:6px!important}
+#teams .team-editor-panel .visual-fields>.field-grid{gap:5px!important}
+#teams .team-editor-panel .visual-fields>.field-grid.moves{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:4px!important}
+#teams .team-editor-panel .visual-fields .field-tab{font-size:10px!important;line-height:1.1!important}
+#teams .team-editor-panel .visual-fields button.picker-current.uniform-type-button{height:43px!important;min-height:43px!important;max-height:43px!important;grid-template-columns:minmax(0,1fr)!important;padding:3px!important;display:flex!important;justify-content:center!important;align-items:center!important;position:relative!important}
+#teams .team-editor-panel .visual-fields .uniform-type-button.uniform-selected .uniform-type-name{display:none!important}
+#teams .team-editor-panel .visual-fields .uniform-type-button .uniform-type-icon{position:static!important;transform:none!important;width:30px!important;height:30px!important;flex:none!important}
+#teams .team-editor-panel .visual-fields .uniform-type-button .uniform-type-icon img{width:30px!important;height:30px!important;max-width:30px!important;max-height:30px!important}
+#teams .team-editor-panel .visual-fields .uniform-type-button .picker-chevron{position:absolute!important;right:3px!important;bottom:2px!important;grid-column:auto!important;font-size:10px!important;width:auto!important}
+#teams .team-editor-panel .visual-fields .uniform-type-button.uniform-empty .uniform-type-name{display:block!important;font-size:11px!important;grid-column:auto!important}
+#teams .my-team-coverage{padding:16px!important;position:sticky;top:12px}
+#teams .my-team-coverage .coverage-content{min-width:0}
+@media(max-width:1100px){#teams .team-workspace{grid-template-columns:1fr}#teams .my-team-coverage{position:static}#teams .team-editor-panel .slot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:620px){#teams .team-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}#teams .team-editor-panel .slot-grid{grid-template-columns:1fr!important}#teams .team-card b{font-size:12px!important}}
+
+/* V7.0 — Battle Arena-inspired stacked team editor / spacious matchup results */
+#teams .team-workspace{grid-template-columns:minmax(310px,35fr) minmax(0,65fr)!important;gap:16px!important;align-items:start!important}
+#teams .team-editor-panel{padding:15px!important}
+#teams .team-editor-panel .slot-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important}
+#teams .team-editor-panel .compact-team-slot{padding:9px 12px!important;border-radius:16px!important;min-height:108px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;background:#f4f9ff!important;border:1px solid #c8dcf6!important}
+#teams .team-editor-panel .compact-team-slot h4{margin:0!important;font-size:15px!important;color:#355376!important}
+#teams .compact-team-types,#teams .compact-team-moves{display:flex;align-items:center;justify-content:center;gap:7px!important;width:100%}
+#teams .compact-team-types{min-height:33px}
+#teams .compact-team-moves{min-height:29px}
+#teams .compact-team-picker{display:inline-flex!important;width:auto!important;flex:0 0 auto!important;margin:0!important;position:relative!important}
+#teams .compact-team-trigger{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;max-height:36px!important;padding:0!important;display:grid!important;place-items:center!important;border:0!important;border-radius:10px!important;background:transparent!important;box-shadow:none!important;overflow:visible!important}
+#teams .compact-team-moves .compact-team-trigger{width:31px!important;min-width:31px!important;height:31px!important;min-height:31px!important;max-height:31px!important}
+#teams .compact-team-trigger .type-mini{display:grid!important;place-items:center!important;flex:none!important;margin:0!important}
+#teams .compact-team-trigger:hover{background:#dceafb!important;outline:2px solid #8fbdf4!important}
+#teams .compact-team-trigger:focus-visible{outline:2px solid #397dc6!important}
+#teams .compact-team-trigger .type-mini img{display:block!important}
+#teams .my-team-coverage{position:static!important;padding:17px!important}
+#teams .my-team-coverage .radar-member-switch{gap:6px!important;flex-wrap:wrap!important}
+#teams .my-team-coverage .radar-member-switch button{min-width:95px!important;min-height:62px!important;padding:9px!important}
+@media(max-width:850px){#teams .team-workspace{grid-template-columns:minmax(0,1fr)!important}#teams .team-editor-panel .slot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:550px){#teams .team-editor-panel .slot-grid{grid-template-columns:minmax(0,1fr)!important}#teams .team-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+
+/* V7.3: shared labeled element picker, consistent across all three pages. */
+.centered-element-grid .centered-element-option{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important;height:112px!important;min-height:112px!important;padding:9px 5px!important;box-sizing:border-box!important;}
+.centered-element-grid .centered-element-option .centered-element-badge{display:block!important;width:64px!important;height:64px!important;max-width:64px!important;object-fit:contain!important;flex:none!important;}
+.centered-element-grid .centered-element-option .centered-element-name{font-size:13px!important;font-weight:750!important;line-height:1.15!important;color:#182c49!important;text-align:center!important;}
+.centered-element-grid .centered-element-option .centered-element-empty{display:grid;place-items:center;width:64px;height:64px;border-radius:13px;background:#e3eaf5;color:#7890b0;font-size:23px;font-weight:650;}
+@media(max-width:420px){.centered-element-grid .centered-element-option{height:98px!important;min-height:98px!important}.centered-element-grid .centered-element-option .centered-element-badge,.centered-element-grid .centered-element-option .centered-element-empty{width:52px!important;height:52px!important}.centered-element-grid .centered-element-option .centered-element-name{font-size:12px!important}}
+
+/* V7.4: picker icons use original 64x64 circular art, never horizontal type badges. */
+.centered-element-grid .centered-element-option img.centered-element-badge{width:64px!important;height:64px!important;min-width:64px!important;min-height:64px!important;max-width:64px!important;max-height:64px!important;object-fit:contain!important;aspect-ratio:1/1!important;}
+@media(max-width:420px){.centered-element-grid .centered-element-option img.centered-element-badge{width:52px!important;height:52px!important;min-width:52px!important;min-height:52px!important;max-width:52px!important;max-height:52px!important;}}
